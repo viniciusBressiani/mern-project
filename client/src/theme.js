@@ -1,6 +1,5 @@
 // COLOR DESIGN TOKENS EXPORT
-import { typography } from '@mui/system';
-import { tokensDark } from './theme';
+
 export const tokensDark= {
 grey: {
     0: "#ffffff" ,
