@@ -1,7 +1,7 @@
 import React from 'react';
 import { useGetGeographyQuery } from 'state/api';
 import { Box, useTheme} from '@mui/material'
-import Header from 'component/Header';
+import Header from 'components/Header';
 import { ResponsiveChoropleth } from '@nivo/geo';
 import { geoData } from 'state/geoData';
 
@@ -52,13 +52,13 @@ const Geography = () => {
           },
           tooltip: {
             container: {
-              color: theme.palette.primary.main,
+              color: theme.palette.primary[600],
             },
           },
         }}
         features={geoData.features}
         margin={{ top: 0, right: 0, bottom: 0, left: -50 }}
-        domain={[ 0, 100 ]}
+        domain={[ 0, 60 ]}
         unknownColor="#666666"
         label="properties.name"
         valueFormat=".2s"

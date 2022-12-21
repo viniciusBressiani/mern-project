@@ -12,7 +12,7 @@ import {
     useTheme,
     useMediaQuery,
   } from "@mui/material";
-  import Header from "component/Header";
+  import Header from "components/Header";
 
 
 const Product = ({
